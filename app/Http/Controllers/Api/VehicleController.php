@@ -52,7 +52,9 @@ class VehicleController extends Controller
      */
     public function show(Vehicle $vehicle)
     {
-        //
+        return response()->json([
+            'vehicle'=>$vehicle
+        ]);
     }
 
     /**
